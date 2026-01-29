@@ -8,19 +8,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="barra">
-        <a class="logo"href="index.html">VETCLI</a>
-        <ul class="lista">
-            
-            <li><a class="barra2" href="localidades.html">Localidades</a></li>
-            <br><br><br>
-            <li><a class="barra2" href="#">Sin función</a></li>
-            <br><br><br>
-            <li><a class="barra2" href="#">Sin función</a></li>
-            <br><br><br>
-            <li><a class="barra2" href="#">Sin función</a></li>
-        </ul>
-    </div>
+    <div id="tareas"></div>
     <h1 class="titulo">Elije una localidad</h1>
     <br>
     <div>
@@ -115,10 +103,54 @@
         <a href="riba_roja.html">Ver consultas</a>
     </div>
     </div>
+    <br><br>
+    <div>
+        <div class="letrero">
+        <h2>Burjassot</h2>
+        <h2>Paterna</h2>
+    </div>
+    <div class="fotos">
+        <img src="burjassot.jpg" alt="" width="45%" >
+        <img src="paterna.jpg" alt="" width="45%">
+    </div>
+    <br>
+    <div class="enlaces">
+        <a href="burjassot.html">Ver consultas</a>
+        <a href="paterna.html">Ver consultas</a>
+    </div>
+    </div>
+    <br><br>
+        <div>
+        <div class="letrero">
+        <h2>Benimamet</h2>
+        <h2>La Eliana</h2>
+    </div>
+    <div class="fotos">
+        <img src="benimamet.jpg" alt="" width="45%" >
+        <img src="la_eliana.jpg" alt="" width="45%">
+    </div>
+    <br>
+    <div class="enlaces">
+        <a href="benimamet.html">Ver consultas</a>
+        <a href="la_eliana.html">Ver consultas</a>
+    </div>
+    </div>
     <br>
     <div class="final">
         <h5 class="final2">VETCLI</h5>
         <p class="derechos">Ningún derecho reservado desde 2026.</p>
     </div>
     <br>
+    <script>
+  const div = document.getElementById("tareas");
+
+  fetch("barra.html")
+    .then(response => response.text())
+    .then(data => {
+        div.innerHTML = data;
+    })
+    .catch(error => console.log("Error cargando barra:", error));
+</script>
+
+</body>
 </html>

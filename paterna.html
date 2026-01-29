@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paterna</title>
+    <link rel="icon" type="img/png" href="VETCLI.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="tareas"></div>
+    <h1 class="titulo">Paterna</h1>
+    <br>
+    <div>
+        <h2 class="letrero">Clínica Veterinaria Paterna</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 961 37 00 10</p>
+                <p>DIRECCIÓN: Carretera de Manises, 4, 46980 Paterna</p>
+                <a href="https://maps.app.goo.gl/aUaKrKBA18cB92V39" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <h2 class="letrero">Clinica veterinaria Menudes Potes</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 961 36 40 30</p>
+                <p>DIRECCIÓN: Carrer de Jacinto Benavente, 33, 46980 Paterna</p>
+                <a href="https://maps.app.goo.gl/mtuW7nYyc7SoYJDH8" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+         <h2 class="letrero">Aúna especialidades veterinarias</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 960 26 60 66</p>
+                <p>DIRECCIÓN: Carrer de l'Algueper, 22, 46980 Paterna</p>
+                <a href="https://maps.app.goo.gl/r3Pdc83B6UNs1QQZA" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <h2 class="letrero">Alta Paterna</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 961 36 51 98</p>
+                <p>DIRECCIÓN: C/ Freixe, 9, 46980 Paterna</p>
+                <a href="https://maps.app.goo.gl/93tbLZ2omLeWD3h76" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <h2 class="letrero">Clinica veterinaria la torre</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 961 38 28 02</p>
+                <p>DIRECCIÓN: Carrer de Federico Garcia Lorca, 10, 46980 Paterna</p>
+                <a href="https://maps.app.goo.gl/d4dCSyV4LshmLouf7" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+                <br>
+        <h2 class="letrero">Clinica veterinaria Veterval</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 961 87 74 05</p>
+                <p>DIRECCIÓN: Carrer Ravanell, 8, 46980 Paterna</p>
+                <a href="https://maps.app.goo.gl/JvFJVQ1ugjNrRFBm9" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <h2 class="letrero">DOCAT</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 961 34 02 91</p>
+                <p>DIRECCIÓN: Av. Rei en Jaume, 18, bajo derecha, 46980 Paterna</p>
+                <a href="https://maps.app.goo.gl/fMCoXG9f5RcBCsB98" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <h2 class="letrero">Maxivet Veterinaria</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 961 37 32 61</p>
+                <p>DIRECCIÓN: Carrer Benimar, 15, Bajo-Izq, 46980 Paterna</p>
+                <a href="https://maps.app.goo.gl/4cF1uUKuCgxQvdmu8" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <a class="volver" href="localidades.html">VOLVER</a>
+        <br>
+    </div>
+    <script>
+  const div = document.getElementById("tareas");
+
+  fetch("barra.html")
+    .then(response => response.text())
+    .then(data => {
+        div.innerHTML = data;
+    })
+    .catch(error => console.log("Error cargando barra:", error));
+</script>
+
+</body>
+</html>

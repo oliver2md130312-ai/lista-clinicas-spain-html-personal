@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Eliana</title>
+    <link rel="icon" type="img/png" href="VETCLI.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="tareas"></div>
+    <h1 class="titulo">La Eliana</h1>
+    <br>
+    <div>
+        <h2 class="letrero">Clinica veterinaria La Eliana</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 960 22 85 19</p>
+                <p>DIRECCIÓN: C. Benissanó, 15, 46183 La Eliana</p>
+                <a href="https://maps.app.goo.gl/dDz9kXeVUPux1YZY6" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <h2 class="letrero">Eliavet Clinica veterinaria</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 962 74 41 66</p>
+                <p>DIRECCIÓN: C. Marines, s/n, 46183 La Eliana</p>
+                <a href="https://maps.app.goo.gl/qCBGJE75iG8tkuCu8" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+         <h2 class="letrero">Centro veterinario mandor en la Eliana</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 626 48 72 81</p>
+                <p>DIRECCIÓN: Pl. Estacion, 5, 46183 La Eliana</p>
+                <a href="https://maps.app.goo.gl/bszJajfgMtJDVDMu7" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <h2 class="letrero">Clínica Veterinaria José Mora y CO</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 962 74 17 94</p>
+                <p>DIRECCIÓN: Carrer València, 23, 46183 La Eliana</p>
+                <a href="https://maps.app.goo.gl/HsRGF3KdAb147rD37" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <h2 class="letrero">Trufa Clinica Veterinaria</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 685 39 62 29</p>
+                <p>DIRECCIÓN: C/ Tuéjar, 10, 46183 La Eliana</p>
+                <a href="https://maps.app.goo.gl/x5BAHCPxyFsuJHRW6" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+         <h2 class="letrero">Vilavet Clinica Veterinaria</h2>
+        <br>
+        <div class="clinicas">
+            <img src="foto3.png" width="50%">
+            <div class="cosas">
+                <p>TELÉFONO: 961 65 64 93</p>
+                <p>DIRECCIÓN: C/ Tuéjar, 46183 La Eliana</p>
+                <a href="https://maps.app.goo.gl/Qx9zZfdLv3EGev6c6" target="_blank">Enlace Maps</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <a class="volver" href="localidades.html">VOLVER</a>
+        <br>
+    </div>
+    <script>
+  const div = document.getElementById("tareas");
+
+  fetch("barra.html")
+    .then(response => response.text())
+    .then(data => {
+        div.innerHTML = data;
+    })
+    .catch(error => console.log("Error cargando barra:", error));
+</script>
+
+</body>
+</html>

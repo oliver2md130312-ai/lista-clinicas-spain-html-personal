@@ -5,22 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" type="img/png" href="VETCLI.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="barra">
-        <a class="logo"href="index.html">VETCLI</a>
-        <ul class="lista">
-            
-            <li><a class="barra2" href="localidades.html">Localidades</a></li>
-            <br><br><br>
-            <li><a class="barra2" href="#">Sin función</a></li>
-            <br><br><br>
-            <li><a class="barra2" href="#">Sin función</a></li>
-            <br><br><br>
-            <li><a class="barra2" href="#">Sin función</a></li>
-        </ul>
-    </div>
+    <div id="tareas"></div>
 
     <div class="portada">
         <h2>Hola y gracias por visitar VETCLI</h2>
@@ -29,10 +18,39 @@
         <h5>Sí le gustaría que esta web tuviese más cosas sobre veterinaria escríbale a este correo: <a href="mailto:vetcli@outlook.es" target="_blank">vetcli@outlook.es</a></h5>
         <img src="VETCLI.png" alt="" width="50%">
     </div>
+    <div class="buscador">
+        <form onsubmit="event.preventDefault(); buscarArchivo();">
+  <input type="text" id="busqueda" placeholder="Localidad en minúsculas sin acentos" required>
+  <button type="submit"><i class="fas fa-search"></i></button>
+</form>
+    </div>
+    <h5 class="descripcion">(Si buscas alguna localidad que no esta en esta web el buscador dara error)</h5>
     <br>
     <div class="final">
         <h5 class="final2">VETCLI</h5>
         <p class="derechos">Ningún derecho reservado desde 2026.</p>
     </div>
     <br>
+    <script>
+        function buscarArchivo() {
+
+  let nombre = document.getElementById('busqueda').value.trim();
+
+
+  if (nombre === "") return;
+
+  window.location.href = nombre + ".html";
+    }
+
+  const div = document.getElementById("tareas");
+
+  fetch("barra.html")
+    .then(response => response.text())
+    .then(data => {
+        div.innerHTML = data;
+    })
+    .catch(error => console.log("Error cargando barra:", error));
+</script>
+
+</body>
 </html>
