@@ -179,3 +179,13 @@ body{
 .buscador button:hover{
     background-color: #0056b3;
 }
+
+.cond{
+    text-align: center;
+    font-size: 18px;
+}
+
+.cond a{
+    padding: 0%;
+    background-color: transparent;
+}
